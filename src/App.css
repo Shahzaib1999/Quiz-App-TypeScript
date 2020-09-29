@@ -5,23 +5,83 @@
   display: grid;
 }
 
-.titleWrapper{
+.loading {
+  text-align: center;
+  margin-top: 300px;
+}
+
+.titleWrapper {
   text-align: center;
   margin: 0 auto;
 }
 
-.titleWrapper p{
+.titleWrapper p {
   margin: 10px;
   font-size: 45px;
 }
 
+.resultCardWrapper {
+  width: 500px;
+  height: 270px;
+  background-color: #6bceb6;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px #888888;
+  margin-top: 200px;
+  text-align: center;
+}
 
+.resultCardWrapper h1 {
+  padding-top: 30px;
+  margin: 0;
+  color: #fff;
+  font-size: 50px;
+}
+
+.resultCardWrapper p {
+  font-size: 24px;
+  color: #fff;
+}
+
+.resultCardWrapper button {
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #6bceb6;
+  cursor: pointer;
+  /* width: 100%; */
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0px solid #6bceb6;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px #888888;
+}
+
+@media (max-width: 500px) {
+  .resultCardWrapper {
+    width: 400px;
+  }
+}
 
 @media (max-width: 400px) {
+  .resultCardWrapper {
+    width: 100%;
+  }
+  .resultCardWrapper h1 {
+    font-size: 40px;
+  }
+  .resultCardWrapper p {
+    font-size: 22px;
+    margin-top: 30px;
+  }
+  .resultCardWrapper button {
+    margin-top: 20px;
+  }
   .App {
     background-image: none;
   }
-  .titleWrapper p{
+  .titleWrapper p {
     font-size: 30px;
   }
 }
